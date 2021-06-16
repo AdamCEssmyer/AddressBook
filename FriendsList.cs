@@ -33,6 +33,16 @@ public class Person
         People.Add(person);
     }
 
+    private static void PrintPerson(Person person)
+    {
+        Console.WriteLine("First Name: " + person.FirstName);
+        Console.WriteLine("Last Name: " + person.LastName);
+        Console.WriteLine("Phone Number: " + person.PhoneNumber);
+        Console.WriteLine("Address 1: " + person.Addresses[0]);
+        Console.WriteLine("Address 2: "  + person.Addresses[1]);
+        Console.WriteLine("---------------------------");
+    }
+
 
 
 
