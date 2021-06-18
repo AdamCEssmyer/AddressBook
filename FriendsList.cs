@@ -60,6 +60,11 @@ public class Person
         Console.ReadKey();
     }
 
+    Console.WriteLine("Enter the first name of the person you would like to remove.");
+    string firstName = Console.ReadLine();
+    Person person = People.FirstOrDefault(x => x.FirstName.ToLower() == firstName.ToLower());
+    
+
 
 
 
