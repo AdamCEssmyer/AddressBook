@@ -81,6 +81,27 @@ public class Person
         Console.ReadKey();
     }
 
+    string command = "";
+    while (command != "exit")
+    {
+        Console.Clear();
+        Console.WriteLine("Please enter a command: ");
+        command = Console.ReadLine().ToLower();
+        switch (command)
+        {
+            case "add":
+             AddPerson();
+             break;
+            case "remove":
+             RemovePerson();
+             break;
+            case "list":
+             ListPeople();
+             break;  
+
+        }
+    }
+
 
 
 
